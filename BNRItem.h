@@ -14,6 +14,7 @@
     NSString *_serialNumber;
     int _valueInDollars;
     NSDate *_dateCreated;
+    NSString *_imageKey;
 }
 + (instancetype)randomItem;
 // Designated initializer for BNRItem
@@ -31,4 +32,8 @@
 - (int)valueInDollars;
 
 - (NSDate *)dateCreated;
+
+- (void)setImageKey:(NSString *)key;
+- (NSString *)imageKey;
+
 @end

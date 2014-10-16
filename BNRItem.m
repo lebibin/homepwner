@@ -51,6 +51,10 @@
         _serialNumber = sNumber;
         _valueInDollars = value;
         _dateCreated = [[NSDate alloc] init];
+        
+        NSUUID *uuid = [[NSUUID alloc] init];
+        NSString *key = [uuid UUIDString];
+        _imageKey = key;
     }
     
     return self;
@@ -93,6 +97,16 @@
 {
     return _dateCreated;
 }
+
+- (void)setImageKey:(NSString *)key
+{
+    _imageKey = key;
+}
+
+- (NSString *)imageKey
+{
+    return _imageKey;
+}
 - (NSString *)description
 {
     NSString *descriptionString =
@@ -104,4 +118,5 @@
      ];
     return descriptionString;
 }
+
 @end

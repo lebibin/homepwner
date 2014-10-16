@@ -7,14 +7,16 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRDetailViewController">
             <connections>
                 <outlet property="dateLabel" destination="ydv-mo-g6V" id="1us-EV-H6T"/>
+                <outlet property="imageView" destination="pA9-d8-MKU" id="TQN-0h-OlL"/>
                 <outlet property="nameField" destination="l4O-mD-02m" id="rcE-fD-c43"/>
                 <outlet property="serialNumberField" destination="tXT-bD-lLS" id="YiQ-RH-4Lb"/>
+                <outlet property="toolbar" destination="E3d-DG-q6T" id="zh1-Yu-Mv0"/>
                 <outlet property="valueField" destination="gCv-Mg-Ih3" id="QuP-af-rw0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -64,10 +66,28 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="E3d-DG-q6T">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem systemItem="camera" id="oXn-1F-4pc">
+                            <connections>
+                                <action selector="takePicture:" destination="-1" id="fTN-qd-0ky"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="pA9-d8-MKU">
+                    <rect key="frame" x="27" y="272" width="263" height="199"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-            <point key="canvasLocation" x="140" y="154"/>
+            <connections>
+                <action selector="backgroundTapped:" destination="-1" eventType="touchUpInside" id="0lx-zo-9VA"/>
+            </connections>
+            <point key="canvasLocation" x="88" y="116"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

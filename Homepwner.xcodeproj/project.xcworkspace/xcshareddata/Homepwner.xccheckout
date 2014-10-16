@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>88CAA0CC-748D-418A-894F-B3B1B9A16E4C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Homepwner</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EE3F0EA1702607736A060B6C12E9CF539B7D906C</key>
+		<string>github.com:octodoodle/homepwner.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Homepwner.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EE3F0EA1702607736A060B6C12E9CF539B7D906C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:octodoodle/homepwner.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EE3F0EA1702607736A060B6C12E9CF539B7D906C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EE3F0EA1702607736A060B6C12E9CF539B7D906C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Homepwner</string>
+		</dict>
+	</array>
+</dict>
+</plist>
